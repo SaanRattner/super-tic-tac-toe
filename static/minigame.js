@@ -49,7 +49,7 @@ function wins(A, B, C) { //check for the shape
         return markA
     }
     else {
-        return null
+        return null;
     }
 }
 
