@@ -1,0 +1,43 @@
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; 
+        margin: 0;     
+        overflow: hidden; 
+        font-family: sans-serif; /* Makes the X and O look cleaner */
+    }
+
+table {
+        border-collapse: collapse;
+        width: 100vw;  
+        height: 100vh; 
+     }
+        
+ td {
+        width: 33.33vw;  
+        height: 33.33vh; 
+        text-align: center;
+        vertical-align: middle;
+        border: 2px solid black;
+        font-size: 5em;  
+        cursor: pointer;
+        user-select: none; /* Prevents text highlighting when double-clicking */
+    }
+        
+/* Remove top border from the first row */
+ tr:first-child td {
+         border-top: none;
+    }
+/* Remove bottom border from the last row */
+tr:last-child td {
+         border-bottom: none;
+    }
+/* Remove left border from the first column */
+     td:first-child {
+        border-left: none;
+     }
+/* Remove right border from the last column */
+td:last-child {
+         border-right: none;
+     } 
